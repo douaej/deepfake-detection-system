@@ -1,0 +1,52 @@
+# Next.js and Node.js
+node_modules/
+.next/
+out/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Datasets and generated files
+data/
+outputs/
+logs/
+
+# Model weights and serialized models
+*.pth
+*.pt
+*.pkl
+*.onnx
+*.h5
+*.safetensors
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Academic report
+rapport deep.pdf
+
+# v0 runtime files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+
+# Internal project notes
+FILES_REFERENCE.txt
+test.png

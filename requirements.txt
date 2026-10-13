@@ -1,0 +1,50 @@
+# ============================================================
+# Deepfake Detection System - requirements.txt
+# Optimisé pour: Intel i5-1135G7, 8GB RAM, CPU-only
+# Python 3.10+
+# ============================================================
+
+# --- Core ML ---
+torch==2.2.2               # CPU-only (pas besoin de CUDA)
+torchvision==0.17.2        # Modèles pré-entraînés (ResNet18...)
+timm==0.9.16               # EfficientNet-B0 et autres
+
+# --- Computer Vision ---
+opencv-python-headless==4.9.0.80   # OpenCV sans GUI (plus léger)
+Pillow==10.3.0                     # Traitement images
+mediapipe==0.10.11                 # Détection visages + landmarks
+
+# --- Analyse scientifique ---
+numpy==1.26.4
+scikit-image==0.22.0       # Texture analysis (GLCM Haralick)
+scipy==1.13.0
+
+# --- API Backend ---
+Flask==3.0.3
+flask-cors==4.0.1
+Werkzeug==3.0.3
+
+# --- Monitoring & Tests ---
+psutil==5.9.8              # Monitoring RAM/CPU
+pytest==8.2.0
+pytest-cov==5.0.0
+
+# --- Visualisation (optionnel) ---
+matplotlib==3.8.4
+scikit-learn==1.4.2        # Métriques (accuracy, AUC...)
+
+# --- Utilitaires ---
+tqdm==4.66.2               # Barres de progression
+requests==2.31.0
+
+# ============================================================
+# INSTALLATION:
+#   pip install -r requirements.txt
+#
+# Pour PyTorch CPU-only (plus léger, ~700MB vs ~2.5GB CUDA):
+#   pip install torch==2.2.2 torchvision==0.17.2 --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt --no-deps
+# ============================================================
+
+scikit-learn==1.5.2
+seaborn
